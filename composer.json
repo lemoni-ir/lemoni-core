@@ -14,6 +14,11 @@
             "Lemoni\\Framework\\": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "php scripts/install.php"
+        ]
+    },
     "minimum-stability": "stable",
     "require": {}
 }
