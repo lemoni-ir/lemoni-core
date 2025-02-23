@@ -1,0 +1,12 @@
+RewriteEngine On
+
+#RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(js|ico|gif|png|jpg|css|eot|ttf|woff|mp4|svg|webp|pdf|doc|docx|xls|xlsx|ppt|pptx|mp3|wav)$ /index.php [L]
+
+# API
+Header set Access-Control-Allow-Origin "*"

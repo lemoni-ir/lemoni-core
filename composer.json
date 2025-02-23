@@ -16,13 +16,13 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
+        "post-create-project-cmd": [
             "php scripts/install.php"
         ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "lemoni/dir": "^1.0"
+        "php": "^8.0"
     }
 }
