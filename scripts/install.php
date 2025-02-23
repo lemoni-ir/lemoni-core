@@ -30,13 +30,16 @@ function copy_folder($src, $dst)
 
 copy_folder($templatePath, $projectRoot);
 
-exec("rm -rf $templatePath");
+define('win', strtoupper(substr(PHP_OS, 0, 3)) === 'WIN');
 
-define('win', 'WINNT' === PHP_OS);
 if (win) {
+    echo "Win\n";
     exec("rmdir /s /q \"$templatePath\"");
 } else {
+    echo "Linux\n";
     exec("rm -rf \"$templatePath\"");
 }
 
 echo "Installation complete!\n";
+
+
