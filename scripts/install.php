@@ -3,6 +3,7 @@ echo "Installing Lemoni Core...\n";
 
 $projectRoot = dirname(__DIR__);
 $templatePath = dirname(__DIR__, 1) . "/template";
+$scriptsPath = dirname(__DIR__, 1) . "/scripts";
 
 
 if (!is_dir($templatePath))
@@ -35,11 +36,15 @@ define('win', strtoupper(substr(PHP_OS, 0, 3)) === 'WIN');
 if (win) {
     echo "Win\n";
     exec("rmdir /s /q \"$templatePath\"");
+    exec("rmdir /s /q \"$scriptsPath\"");
 } else {
     echo "Linux\n";
     exec("rm -rf \"$templatePath\"");
+    exec("rm -rf \"$scriptsPath\"");
 }
 
 echo "Installation complete!\n";
+
+
 
 
