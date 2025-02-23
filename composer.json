@@ -1,0 +1,19 @@
+{
+    "name": "lemoni/core",
+    "description": "A lightweight and simple PHP framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mj",
+            "email": "info@lemoni.ir"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lemoni\\Framework\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
