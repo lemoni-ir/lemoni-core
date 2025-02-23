@@ -1,2 +1,2 @@
 <?php
-echo "hello :)";
+echo "\n" . __FILE__ . "\n";
