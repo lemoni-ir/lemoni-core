@@ -20,7 +20,8 @@
             "php scripts/install.php"
         ]
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "lemoni/dir": "^1.0"
     }
