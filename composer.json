@@ -1,7 +1,6 @@
 {
     "name": "lemoni/core",
     "description": "A lightweight and simple PHP framework",
-    "version": "7.0.2",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -10,11 +9,6 @@
             "email": "info@lemoni.ir"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Lemoni\\Core\\": "src/"
-        }
-    },
     "scripts": {
         "post-create-project-cmd": [
             "php scripts/install.php"
@@ -26,3 +20,4 @@
         "php": "^8.0"
     }
 }
+

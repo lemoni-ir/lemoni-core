@@ -32,4 +32,11 @@ copy_folder($templatePath, $projectRoot);
 
 exec("rm -rf $templatePath");
 
+define('win', 'WINNT' === PHP_OS);
+if (win) {
+    exec("rmdir /s /q \"$templatePath\"");
+} else {
+    exec("rm -rf \"$templatePath\"");
+}
+
 echo "Installation complete!\n";
