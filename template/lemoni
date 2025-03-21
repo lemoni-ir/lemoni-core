@@ -1,0 +1,9 @@
+<?php
+
+require 'vendor/autoload.php';
+
+use backend\console\kernel;
+
+$kernel = new kernel();
+$kernel->handle($argv);
+return;
